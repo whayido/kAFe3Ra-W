@@ -1,0 +1,138 @@
+.nauchnayadeyatelnost {
+  font-family: "Play";
+  padding: 30px 150px 30px 150px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-items: center;
+  gap: 15px;
+  padding-bottom: 100px;
+}
+/*достижения и перспективы*/
+.lilbox7 {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: #222222;
+  border: 1px solid #333333;
+  color: #f7f7f8;
+  border-radius: 18px;
+  padding: 20px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.dostizhenia {
+  font-family: "Play";
+  padding: 30px 150px 30px 150px;
+  justify-items: center;
+  gap: 15px;
+  padding-bottom: 50px;
+}
+.up {
+  display: flex;
+  justify-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+.bottom {
+  display: flex;
+  justify-items: center;
+  gap: 15px;
+}
+/*schedule*/
+.schedulebox {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  height: 100%;
+  padding: 100px;
+  width: 100%;
+  clip-path: inset(20px 50px 20px 50px round 40px);
+}
+
+.boxfooter {
+  background-color: #e9e9e9;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  height: 100%;
+  padding: 100px;
+  width: 100%;
+  clip-path: inset(20px 50px 20px 50px round 40px);
+}
+.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  gap: 15px;
+}
+
+.boxsection {
+  display: flex;
+  margin-top: 50px;
+}
+
+.imgsection {
+  margin-top: 20px;
+  gap: 30px;
+  width: 100px;
+  display: flex;
+}
+
+.titlesection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zguimg {
+  transition-duration: 400ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  width: 200px;
+}
+/*научная деятельность*/
+.lilbox4 {
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: #222222;
+  border: 1px solid #333333;
+  color: #f7f7f8;
+  border-radius: 18px;
+  padding: 20px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox5 {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: #222222;
+  border: 1px solid #333333;
+  color: #f7f7f8;
+  border-radius: 18px;
+  padding: 20px;
+  transition-duration: 200ms;
+  margin-bottom: 15px;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.lilbox6 {
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  background-color: #222222;
+  border: 1px solid #333333;
+  color: #f7f7f8;
+  border-radius: 18px;
+  padding: 20px;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+}
+.zagolov {
+  font-size: 40px;
+  color: #f7f7f8;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.zagolov1 {
+  position: relative;
+  top: 60px;
+  font-size: 40px;
+  color: #f7f7f8;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.heigth {
+  background-image: url(../../assets/img/media/grid2.png);
+  background-size: cover;
+}
