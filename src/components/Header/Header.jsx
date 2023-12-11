@@ -4,7 +4,7 @@ import "./Header.sass";
 import Search from "../../assets/img/header/Search.svg";
 import User from "../../assets/img/header/User.svg";
 import Zgy from "../../assets/img/media/zgy.svg";
-
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -15,9 +15,9 @@ const Header = () => {
 
         <section className="navbar">
           <nav>
-            <a href="/" className="logo_header">
+            <Link to={"/"} className="logo_header">
               ИCиТ
-            </a>
+            </Link>
             <NavLink to={"/сотрудники"} className="link-header">
               Сотрудники
             </NavLink>
