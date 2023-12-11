@@ -1,98 +1,16 @@
-import React, { useState } from "react";
+import React from "react";
 import style from "./Staff.module.scss";
 import Screen from "../../assets/img/media/staff_photo.svg";
 import FadeIn from "../../components/FadeIn";
-import ArrowR from "../../assets/img/media/arrow-link.svg";
-import ArrowL from "../../assets/img/media/arrow-link2.svg";
-const StaffCard = ({ name, img, post, link, degree, surname }) => {
-  return (
-    <div>
-      <div className={style.staff_card}>
-        <div className={style.staff_name}>
-          <p className={style.name}>{name}</p>
-          <p className={style.surname}>{surname}</p>
-        </div>
-
-        <div className={style.box_img}>
-          <img src={img} alt={name} className={style.staff_img} />
-          <div className={style.box_blur}>{post}</div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-const StaffList = () => {
-  const data = {
-    staff: [
-      {
-        id: 1,
-        name: "Беляев",
-        surname: "Игорь Сергеевич",
-        img: "/src/assets/img/staff/Belyev.png",
-        post: "доцент",
-        link: "47-39-18",
-        degree: "кандидат экономических наук",
-      },
-      {
-        id: 2,
-        name: "Дыптан",
-        surname: "Елена Арнольдовна",
-        img: "/src/assets/img/staff/Dyptan.png",
-        post: "старший преподаватель",
-        link: "7(3919)473918",
-      },
-      {
-        id: 3,
-        name: "Петров",
-        surname: "Алексей Михайлович",
-        img: "/src/assets/img/staff/Petrov.png",
-        post: "доцент",
-        link: "47-39-18",
-      },
-      {
-        id: 4,
-        name: "Фаддеенков",
-        surname: "Андрей Владимирович",
-        img: "/src/assets/img/staff/Fadeenkov.png",
-        post: "доцент",
-        link: "47-39-18",
-        degree: "кандидат технических наук",
-      },
-      {
-        id: 5,
-        name: "Попкова",
-        surname: "Алла Алексеевна",
-        img: "/src/assets/img/staff/Popkova.png",
-        post: "доцент",
-        link: "47-39-18",
-        degree: "кандидат технических наук",
-      },
-
-      {
-        id: 7,
-        name: "Бодрякова",
-        surname: "Людмила Николаевна",
-        img: "/src/assets/img/staff/Bodryakova.png",
-        post: "доцент",
-        link: "47-39-18",
-      },
-    ],
-  };
-
-  const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(2);
-
-  const handlePrevious = () => {
-    setStartIndex(startIndex - 3);
-    setEndIndex(endIndex - 3);
-  };
-
-  const handleNext = () => {
-    setStartIndex(startIndex + 3);
-    setEndIndex(endIndex + 3);
-  };
-
+/* import ArrowR from "../../assets/img/media/arrow-link.svg";
+import ArrowL from "../../assets/img/media/arrow-link2.svg"; */
+import Belyaev from "../../assets/img/staff/Belyev.png";
+import Petrov from "../../assets/img/staff/Petrov.png";
+import Dyptan from "../../assets/img/staff/Dyptan.png";
+import Popkova from "../../assets/img/staff/Popkova.png";
+import Faddeenkov from "../../assets/img/staff/Fadeenkov.png";
+import Bodryakova from "../../assets/img/staff/Bodryakova.png";
+const StaffCard = () => {
   return (
     <div className={style.page}>
       <section>
@@ -115,33 +33,92 @@ const StaffList = () => {
         <FadeIn delay={0.2} direction="right" padding fullwidth>
           <p className={style.title}>Преподаватели кафедры</p>
           <div className={style.staff_box}>
-            {data.staff.slice(startIndex, endIndex + 1).map((item, index) => (
-              <StaffCard
-                key={index}
-                name={item.name}
-                surname={item.surname}
-                img={item.img}
-                post={item.post}
-                link={item.link}
-                degree={item.degree}
-              />
-            ))}
-          </div>
-          <div>
-            {startIndex > 0 && (
-              <img
-                src={ArrowR}
-                onClick={handlePrevious}
-                className={style.arrowr}
-              ></img>
-            )}
-            {endIndex < data.staff.length - 1 && (
-              <img
-                src={ArrowL}
-                onClick={handleNext}
-                className={style.arrowl}
-              ></img>
-            )}
+            <div>
+              <div className={style.staff_card}>
+                <div className={style.staff_name}>
+                  <p className={style.name}>Беляев</p>
+                  <p className={style.surname}>Игорь Сергеевич</p>
+                </div>
+
+                <div className={style.box_img}>
+                  <img src={Belyaev} alt={name} className={style.staff_img} />
+                  <div className={style.box_blur}>доцент</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={style.staff_card}>
+                <div className={style.staff_name}>
+                  <p className={style.name}>Петров</p>
+                  <p className={style.surname}>Алексей Михайлович</p>
+                </div>
+
+                <div className={style.box_img}>
+                  <img src={Petrov} alt={name} className={style.staff_img} />
+                  <div className={style.box_blur}>доцент</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={style.staff_card}>
+                <div className={style.staff_name}>
+                  <p className={style.name}>Дыптан</p>
+                  <p className={style.surname}>Елена Арнольдовна</p>
+                </div>
+
+                <div className={style.box_img}>
+                  <img src={Dyptan} alt={name} className={style.staff_img} />
+                  <div className={style.box_blur}>старший преподаватель</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={style.staff_card}>
+                <div className={style.staff_name}>
+                  <p className={style.name}>Фаддеенков</p>
+                  <p className={style.surname}>Андрей Владимирович</p>
+                </div>
+
+                <div className={style.box_img}>
+                  <img
+                    src={Faddeenkov}
+                    alt={name}
+                    className={style.staff_img}
+                  />
+                  <div className={style.box_blur}>доцент</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={style.staff_card}>
+                <div className={style.staff_name}>
+                  <p className={style.name}>Попкова</p>
+                  <p className={style.surname}>Алла Алексеевна</p>
+                </div>
+
+                <div className={style.box_img}>
+                  <img src={Popkova} alt={name} className={style.staff_img} />
+                  <div className={style.box_blur}>доцент</div>
+                </div>
+              </div>
+            </div>
+            <div>
+              <div className={style.staff_card}>
+                <div className={style.staff_name}>
+                  <p className={style.name}>Бодрякова</p>
+                  <p className={style.surname}>Людмила Николаевна</p>
+                </div>
+
+                <div className={style.box_img}>
+                  <img
+                    src={Bodryakova}
+                    alt={name}
+                    className={style.staff_img}
+                  />
+                  <div className={style.box_blur}>доцент</div>
+                </div>
+              </div>
+            </div>
           </div>
         </FadeIn>
       </section>
@@ -149,4 +126,4 @@ const StaffList = () => {
   );
 };
 
-export default StaffList;
+export default StaffCard;
