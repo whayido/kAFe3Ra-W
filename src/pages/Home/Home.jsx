@@ -13,6 +13,7 @@ import Aph from "../../assets/img/media/aph.png";
 import Laptop from "../../assets/img/media/laptop.svg";
 import newnew from "../../assets/img/fill/9.gif";
 import FadeIn from "../../components/FadeIn";
+
 const Home = () => {
   return (
     <>
@@ -135,8 +136,8 @@ const Home = () => {
               <div className={style.blok_NN}>
                 <p className={style.text_about}>
                   Сотрудничаем с крупнейшим в мире производителем никеля и
-                  палладия компанией{" "}
-                  <span className={style.text_nn}>НорНикель</span>, что
+                  палладия компанией
+                  <span className={style.text_nn}> НорНикель</span>, что
                   позволяет студентам получать практические навыки работы
                 </p>
 

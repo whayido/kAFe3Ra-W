@@ -1,6 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "./Header.sass";
+import "./Header.scss";
 import Search from "../../assets/img/header/Search.svg";
 import User from "../../assets/img/header/User.svg";
 import Zgy from "../../assets/img/media/zgy.svg";
