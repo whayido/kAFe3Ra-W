@@ -1,0 +1,204 @@
+.footer {
+  font-family: "Play";
+  font-weight: normal;
+  font-style: normal;
+  flex: 0 0 auto;
+  min-height: 400px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+}
+.box {
+  padding: 20px;
+  font-size: 16px;
+  background-color: #141414;
+  border-radius: 18px;
+  border: 1px solid #333333;
+  color: #f7f7f7;
+}
+.container {
+  margin-top: 50px;
+  margin-left: 18%;
+  margin-right: 18%;
+  grid-auto-rows: minmax(100px, auto);
+  grid-auto-columns: minmax(100px, auto);
+  display: grid;
+  grid-template-columns: auto-fit;
+  grid-template-areas:
+    "subscribe subscribe subscribe subscribe  contacts contacts contacts "
+    "useful_links useful_links useful_links  useful_links contacts contacts contacts "
+    "useful_links useful_links useful_links   useful_links tg vk ok";
+  gap: 7px;
+}
+.subscribe {
+  grid-area: subscribe;
+}
+.useful_links {
+  grid-area: useful_links;
+}
+.link_a {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 7px;
+}
+.contacts {
+  grid-area: contacts;
+  display: grid;
+  justify-content: center;
+}
+.social_link {
+  grid-template-columns: repeat(3, 1fr);
+}
+.link {
+  background-color: #101010;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tg {
+  grid-area: tg;
+  &:hover {
+    background-color: #0088cc;
+    transition: 0.3s;
+  }
+}
+
+.vk {
+  grid-area: vk;
+  &:hover {
+    background-color: #0077ff;
+    transition: 0.3s;
+  }
+}
+
+.ok {
+  grid-area: ok;
+  &:hover {
+    background-color: #ed812b;
+    transition: 0.3s;
+  }
+}
+
+.text[href^="https:"] {
+  color: #f7f7f8;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.text[href^="mailto:"] {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #f7f7f8;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.text[href^="tel:"] {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #f7f7f8;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+
+/* aaaaa */
+.creators {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #808080;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  color: #808080;
+}
+.mask {
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  margin-top: 20%;
+}
+.title_blok {
+  font-size: 26px;
+  font-family: "Days one";
+}
+.footer_end {
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.creator_b {
+  display: inline-block;
+  color: #f7f7f8;
+  text-decoration: underline;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.creator_d {
+  color: #f7f7f8;
+  text-decoration: underline;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.btn_footer {
+  font-size: 14px;
+  border: 1px solid #333333;
+  background-color: #f7f7f8;
+  color: #101010;
+  font-family: "Play";
+  width: 110px;
+  height: 40px;
+  border-radius: 12px;
+  transition: 0.3s;
+  margin-left: 10px;
+  cursor: pointer;
+  &:hover {
+    transition: 0.3s;
+    background-color: #5303ff;
+    color: #f7f7f8;
+  }
+}
+.input_footer {
+  outline: none;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid #333333;
+  background-color: #242424;
+  color: #808080;
+  font-weight: 400;
+  width: 300px;
+  height: 40px;
+  border-radius: 12px;
+  transition: 0.3s;
+  &:focus {
+    border: 1px solid #f7f7f8;
+    color: #f7f7f8;
+  }
+}
+.subb {
+  margin-top: 10px;
+}

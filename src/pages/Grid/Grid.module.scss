@@ -1,0 +1,399 @@
+$color-blok: #222222;
+$alt-blok: #171717;
+.Home{
+  min-height: 1004px;
+  margin-top: 100px;
+}
+
+/*  */
+
+.box {
+  font-family: "Play";
+  color: #f7f7f8;
+  background-color: $alt-blok;
+  border: 1px solid #333333;
+  border-radius: 18px;
+  padding: 20px;
+  font-size: 18px;
+}
+.about {
+  background-color: #171717;
+  margin-top: 50px;
+  margin-left: 3%;
+  margin-right: 3%;
+  display: grid;
+  grid-template-columns: auto-fill 1fr 1fr;
+  gap: 7px;
+}
+/* .first_container {
+  display: grid;
+  grid-template-columns: 45% 1fr 1fr;
+  gap: 7px;
+}
+.second_container {
+  display: grid;
+  grid-template-columns: 42% 45% 1fr;
+  gap: 7px;
+} */
+.courses {
+  grid-column: 1/4;
+  /*   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(225deg, #28d8ff, #032eff);
+  filter: drop-shadow(0 3px 3px #5303ff); */
+  .items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    column-gap: 15px;
+    row-gap: 10px;
+  }
+  .courses_desc {
+    font-family: "Days one";
+    font-size: 24px;
+    color: #0077ff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(225deg, #032eff, #28d8ff);
+    filter: drop-shadow(0 5px 5px #5303ff);
+  }
+}
+
+.norilsk {
+  grid-column: 6/7;
+  grid-row: 2/4;
+  .norilsk_desc {
+    font-family: "Days one";
+    font-size: 24px;
+    color: #0077ff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(225deg, #032eff, #28d8ff);
+    filter: drop-shadow(0 5px 5px #5303ff);
+  }
+}
+.isit {
+  grid-row: 3/4;
+  grid-column: 1/2;
+  .isit_desc {
+    font-size: 24px;
+    color: #0077ff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(225deg, #032eff, #28d8ff);
+    filter: drop-shadow(0 5px 5px #5303ff);
+    font-family: "Rubik Glitch";
+  }
+}
+.data {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 34px;
+  text-align: center;
+  /*  
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(225deg, #032eff, #28d8ff);
+  filter: drop-shadow(0 5px 5px #5303ff); */
+  .data_desc {
+    font-family: "Days one";
+    font-size: 34px;
+    text-align: center;
+    background-color: #ffffff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, #7f00ff, #396afc, #5303ff);
+    background-image: linear-gradient(225deg, #28d8ff, #032eff);
+    filter: drop-shadow(0 5px 5px #5303ff);
+  }
+}
+.age {
+  grid-column: 5/7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  /* 
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(180deg, #7f00ff, #396afc, #5303ff);
+  background-image: linear-gradient(225deg, #28d8ff, #032eff);
+  filter: drop-shadow(0 5px 5px #5303ff); */
+  .age_desc {
+    font-family: "Days one";
+    font-size: 34px;
+    text-align: center;
+    background-color: #ffffff;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(180deg, #7f00ff, #396afc, #5303ff);
+    background-image: linear-gradient(225deg, #28d8ff, #032eff);
+    filter: drop-shadow(0 5px 5px #5303ff);
+  }
+}
+.NN {
+  grid-column: 3/6;
+  grid-row: 2/3;
+  /*   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(225deg, #032eff, #28d8ff);
+  filter: drop-shadow(0 3px 3px #5303ff); */
+}
+.text_nn {
+  font-family: "Days one";
+  font-size: 28px;
+  text-align: center;
+  background-color: #ffffff;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(180deg, #7f00ff, #396afc, #5303ff);
+  background-image: linear-gradient(225deg, #28d8ff, #032eff);
+  filter: drop-shadow(0 5px 5px #5303ff);
+}
+.north {
+  grid-column: 1/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  column-gap: 20px;
+}
+.zgy {
+  grid-column: 2/6;
+  text-align: center;
+}
+.title {
+  font-family: "Days one";
+  font-size: 24px;
+  text-align: center;
+}
+.circle {
+  object-fit: fill;
+  width: 100px;
+}
+h1 {
+  font-size: 140px;
+}
+/* footer */
+.footer {
+  font-family: "Play";
+  font-weight: normal;
+  font-style: normal;
+  flex: 0 0 auto;
+  min-height: 400px;
+  background-color: #000000;
+  justify-content: center;
+  align-items: center;
+  display: grid;
+  border-top: #ed812b 4px dashed;
+  /* cursor: url("../../../public/curso.jpg"), auto; */
+}
+.box {
+  padding: 20px;
+  font-size: 16px;
+  background-color: #141414;
+  border-radius: 18px;
+  border: 1px solid #333333;
+  color: #f7f7f7;
+}
+.container {
+  margin-top: 50px;
+  margin-left: 18%;
+  margin-right: 18%;
+  display: grid;
+  grid-template-columns: auto-fit;
+  gap: 7px;
+  grid-auto-rows: minmax(100px, auto);
+}
+.subscribe {
+  grid-column: 1/2;
+}
+.useful_links {
+  grid-row: 2/4;
+}
+.link_a {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(5, auto);
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 7px;
+}
+.contacts {
+  display: grid;
+  justify-content: center;
+  grid-column: 2/5;
+  grid-row: 1/3;
+}
+
+.link {
+  background-color: #101010;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.tg {
+  grid-column: 2/3;
+  grid-row: 3/4;
+
+  &:hover {
+    background-color: #0088cc;
+    transition: 0.3s;
+  }
+}
+
+.vk {
+  grid-column: 3/4;
+  grid-row: 3/4;
+  &:hover {
+    background-color: #0077ff;
+    transition: 0.3s;
+  }
+}
+
+.ok {
+  grid-column: 4/5;
+  grid-row: 3/4;
+  &:hover {
+    background-color: #ed812b;
+    transition: 0.3s;
+  }
+}
+
+.text[href^="https:"] {
+  color: #f7f7f8;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.text[href^="mailto:"] {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #f7f7f8;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.text[href^="tel:"] {
+  font-size: 16px;
+  text-decoration: underline;
+  color: #f7f7f8;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+
+/* aaaaa */
+.creators {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  color: #808080;
+  gap: 7px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+  color: #808080;
+}
+.mask {
+  width: 10%;
+  position: absolute;
+  z-index: 1;
+  margin-top: 20%;
+}
+.title_blok {
+  font-size: 26px;
+  font-family: "Days one";
+}
+.footer_end {
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.creator_b {
+  display: inline-block;
+  color: #f7f7f8;
+  text-decoration: underline;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.creator_d {
+  color: #f7f7f8;
+  text-decoration: underline;
+  transition: 0.3s;
+  &:hover {
+    transition: 0.3s;
+    color: #5303ff;
+  }
+}
+.btn_footer {
+  font-size: 14px;
+  border: 1px solid #333333;
+  background-color: #f7f7f8;
+  color: #101010;
+  font-family: "Play";
+  width: 110px;
+  height: 40px;
+  border-radius: 12px;
+  transition: 0.3s;
+  margin-left: 10px;
+  cursor: pointer;
+  &:hover {
+    transition: 0.3s;
+    background-color: #5303ff;
+    color: #f7f7f8;
+  }
+}
+.input_footer {
+  outline: none;
+  padding: 5px 5px 5px 10px;
+  border: 1px solid #333333;
+  background-color: #242424;
+  color: #808080;
+  font-weight: 400;
+  width: 300px;
+  height: 40px;
+  border-radius: 12px;
+  transition: 0.3s;
+  &:focus {
+    border: 1px solid #f7f7f8;
+    color: #f7f7f8;
+  }
+}
+.subb {
+  margin-top: 10px;
+}
